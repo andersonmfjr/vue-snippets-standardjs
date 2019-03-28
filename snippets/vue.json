@@ -1,0 +1,24 @@
+{
+  "Vue Single File Component": {
+    "prefix": "vbase",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "\t\t",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "\texport default {",
+      "\t\t${0}",
+      "\t}",
+      "</script>",
+      "",
+      "<style lang=\"${1:stylus}\" scoped>",
+      "",
+      "</style>",
+      ""
+    ],
+    "description": "Base for Vue File"
+  }
+}

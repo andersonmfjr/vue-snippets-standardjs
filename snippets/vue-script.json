@@ -1,0 +1,228 @@
+{
+  "Vue Data": {
+    "prefix": "vdata",
+    "body": [
+      "data () {",
+      "\treturn {",
+      "\t\t${1:key}: ${2:value}",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Component Data"
+  },
+  "Vue Methods": {
+    "prefix": "vmethod",
+    "body": ["methods: {", "\t${1:name} () {", "\t\t${0}", "\t}", "}"],
+    "description": "vue method"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": [
+      "computed: {",
+      "\t${1:name} () {",
+      "\t\treturn this.${2:data}${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "Vue Watchers": {
+    "prefix": "vwatch",
+    "body": [
+      "watch: {",
+      "\t${1:data} (${2:newValue}, ${3:oldValue}) {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher"
+  },
+  "Vue Watchers with Options": {
+    "prefix": "vwatch-options",
+    "body": [
+      "watch: {",
+      "\t${1:data}: {",
+      "\t\timmediate: ${2:true},",
+      "\t\tdeep: ${3:true},",
+      "\t\thandler (${4:newValue}, ${5:oldValue}) {",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher with options"
+  },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "Vue Lifecycle beforeCreate": {
+    "prefix": "vbeforecreate",
+    "body": ["beforeCreate () {", "\t${0}", "}"],
+    "description": "beforeCreate lifecycle method"
+  },
+  "Vue Lifecycle created": {
+    "prefix": "vcreated",
+    "body": ["created () {", "\t${0}", "}"],
+    "description": "created lifecycle method"
+  },
+  "Vue Lifecycle beforeMount": {
+    "prefix": "vbeforemount",
+    "body": ["beforeMount () {", "\t${0}", "}"],
+    "description": "beforeMount lifecycle method"
+  },
+  "Vue Lifecycle mounted": {
+    "prefix": "vmounted",
+    "body": ["mounted () {", "\t${0}", "}"],
+    "description": "mounted lifecycle method"
+  },
+  "Vue Lifecycle beforeUpdate": {
+    "prefix": "vbeforeupdate",
+    "body": ["beforeUpdate () {", "\t${0}", "}"],
+    "description": "beforeUpdate lifecycle method"
+  },
+  "Vue Lifecycle updated": {
+    "prefix": "vupdated",
+    "body": ["updated () {", "\t${0}", "}"],
+    "description": "updated lifecycle method"
+  },
+  "Vue Lifecycle beforeDestroy": {
+    "prefix": "vbeforedestroy",
+    "body": ["beforeDestroy () {", "\t${0}", "}"],
+    "description": "beforeDestroy lifecycle method"
+  },
+  "Vue Lifecycle destroyed": {
+    "prefix": "vdestroyed",
+    "body": ["destroyed () {", "\t${0}", "}"],
+    "description": "destroyed lifecycle method"
+  },
+  "Vue Import File": {
+    "prefix": "vimport",
+    "body": ["import ${1:New} from '${2:path}/${1:New}.vue'"],
+    "description": "Import one component into another"
+  },
+  "Vue Import into the Component": {
+    "prefix": "vcomponents",
+    "body": ["components: {", "\t${1:New}", "}"],
+    "description": "Import one component into another, within export statement"
+  },
+  "Vue Filter": {
+    "prefix": "vfilter",
+    "body": [
+      "filters: {",
+      "\t${1:fnName}: function (${2:value}) {",
+      "\t\treturn ${2:value}${0}",
+      "\t}",
+      "}"
+    ],
+    "description": "vue filter"
+  },
+  "Vue Mixin": {
+    "prefix": "vmixin",
+    "body": [
+      "const ${1:mixinName} = {",
+      "\tmounted () {",
+      "\t\tconsole.log('hello from mixin!')",
+      "\t}",
+      "}"
+    ],
+    "description": "vue mixin"
+  },
+  "Vue Use Mixin": {
+    "prefix": "vmixin-use",
+    "body": ["mixins: [${1:mixinName}]"],
+    "description": "vue use mixin"
+  },
+  "Vue Custom Directive": {
+    "prefix": "vc-direct",
+    "body": [
+      "Vue.directive('${1:directiveName}', {",
+      "\tbind (el, binding, vnode) {",
+      "\t\tel.style.${2:arg} = binding.value.${2:arg}",
+      "\t}",
+      "})"
+    ],
+    "description": "vue custom directive"
+  },
+  "Vue Import Library": {
+    "prefix": "vimport-lib",
+    "body": ["import { ${1:libName} } from '${1:libName}'"],
+    "description": "import a library"
+  },
+  "Vue Transition Methods with JavaScript Hooks": {
+    "prefix": "vanimhook-js",
+    "body": [
+      "beforeEnter (el) {",
+      "\tconsole.log('beforeEnter')",
+      "},",
+      "enter (el, done) {",
+      "\tconsole.log('enter')",
+      "\tdone()",
+      "},",
+      "beforeLeave (el) {",
+      "\tconsole.log('beforeLeave')",
+      "},",
+      "leave (el, done) {",
+      "\tconsole.log('leave')",
+      "\tdone()",
+      "}"
+    ],
+    "description": "transition component js hooks"
+  },
+  "Vue Commit Vuex Store in Methods": {
+    "prefix": "vcommit",
+    "body": [
+      "${1:mutationName} () {",
+      "\tthis.\\$store.commit('${1:mutationName}', ${2:payload})",
+      "}"
+    ],
+    "description": "commit to vuex store in methods for mutation"
+  },
+  "Vue Dispatch Vuex Store in Methods": {
+    "prefix": "vdispatch",
+    "body": [
+      "${1:actionName} () {",
+      "\tthis.\\$store.dispatch('${1:actionName}', ${2:payload})",
+      "}"
+    ],
+    "description": "dispatch to vuex store in methods for action"
+  },
+  "ShallowMount Unit Test": {
+    "prefix": "vshallowtest",
+    "body": [
+      "import { shallowMount } from '@vue/test-utils'",
+      "import ${1:HelloWorld} from '${2:path}/${1:HelloWorld}'",
+      "",
+      "describe('${1:HelloWorld}.vue', () => {",
+      "\tit('${3:should render correct contents}', () => {",
+      "\t\tconst wrapper = shallowMount(${1:HelloWorld})",
+      "\t\texpect(wrapper.contains('div')).toBe(true)",
+      "\t})",
+      "})"
+    ],
+    "description": "unit test component with vue test utils and shallowMount"
+  },
+  "Mount Unit Test": {
+    "prefix": "vmounttest",
+    "body": [
+      "import { mount } from '@vue/test-utils'",
+      "import ${1:HelloWorld} from '${2:path}/${1:HelloWorld}'",
+      "",
+      "describe('${1:HelloWorld}.vue', () => {",
+      "\tit('${3:should render correct contents}', () => {",
+      "\t\tconst wrapper = mount(${1:HelloWorld})",
+      "\t\texpect(wrapper.contains('div')).toBe(true)",
+      "\t})",
+      "})"
+    ],
+    "description": "unit test component with vue test utils and mount"
+  }
+}
