@@ -72,4 +72,4 @@ Snippet         | Purpose
 
 ## Contributing
 
-This is an open source project open to anyone. Contributions are welcome [github](https://github.com/andersonmfjr/vue-snippets-standardjs)
+This is an open source project. Contributions are welcome [github](https://github.com/andersonmfjr/vue-snippets-standardjs).
